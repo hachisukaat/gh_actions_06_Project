@@ -12,8 +12,8 @@ jobs:
     environment: testing
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.vdtrq.mongodb.net
-      MONGODB_USERNAME: atsuhachi0829
-      MONGODB_PASSWORD: yxXLXBgJlbbWiibc
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
